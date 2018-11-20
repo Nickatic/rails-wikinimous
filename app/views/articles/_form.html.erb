@@ -1,0 +1,10 @@
+<%= form_for(@article) do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title , class: "form-control" %>
+
+  <%= f.label :content %>
+  <%= f.text_area(:content, "data-editor" => "markdown", rows: 10, class: "form-control") %>
+
+  <%= f.submit  class: "form-control btn btn-success"%>
+<% end %>
+

@@ -1,0 +1,6 @@
+<div class="container col-xs-8 col-xs-offset-2">
+  <h1><%= @article.title %> <a href=<%= edit_article_path(@article)%>><i class="fas fa-pen"></i></a><a data-method="delete" href=<%= article_path(@article) %>><i class="fas fa-trash-alt"></i></a></h1>
+  <hr>
+  <article><%= markdown(@article.content) %></article>
+
+</div>
